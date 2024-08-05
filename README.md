@@ -53,11 +53,6 @@ curl -H 'Content-Type: application/json' \
 ```json
 {
   "PUT/api/doggo/{id}": {
-    "request": {
-      "size": "",
-      "weight": 0,
-      "name": ""
-    },
     "response": {
       "id": 25,
       "size": "HUGE",
