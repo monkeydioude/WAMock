@@ -6,7 +6,7 @@
             "meat": "chicken"
         }]
     },
-    "GET/api/dog/suzie": {
+    "GET/api/dog/{name}": {
         "response": {
             "name": "suzie",
             "weight": "4500",

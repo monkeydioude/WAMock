@@ -99,3 +99,10 @@ curl -H 'Content-Type: application/json' \
 
 - :api:doggo:(id).json => would mock a route such as /api/doggo/2
 - :.json => /
+
+## TODO!
+
+- Match request defined in config with the request's payload
+- Handle config directory
+- Handle hot reload of the config through goroutines
+- (MAYBE NOT) Handle dynamic parameters in path that should be reflected in the response
