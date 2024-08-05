@@ -1,0 +1,17 @@
+{
+    "GET/api/food/japanese": {
+       "response": [{
+            "name": "teriyaki-don",
+            "type": "donburi",
+            "meat": "chicken"
+        }]
+    },
+    "GET/api/dog/suzie": {
+        "response": {
+            "name": "suzie",
+            "weight": "4500",
+            "unit": "g",
+            "age": 3.5
+        }
+    }
+}
