@@ -1,6 +1,7 @@
 # WAMock (Web API Mock)
 
 is a localhost micro-server made for mocking calls to web api.
+**For example, with WAMock, you could mock calls like `POST /api/doggo`, and always get an answer, without thee need for an internet connection or a running DB.**
 
 WAMock is:
 
