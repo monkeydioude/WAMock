@@ -45,6 +45,7 @@ curl -H 'Content-Type: application/json' \
 ### Provided flags:
 
 - -x `{s}`: enable the config auto-reload coroutine and also set it to trigger every `s` seconds
+- -p `{port}`: choose the port you wish to run the server on. *Default is `8088`*
 
 ## JSON!
 
