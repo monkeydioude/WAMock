@@ -1,0 +1,9 @@
+{
+    "response": {
+        "id": "{id}",
+        "name": "rambo",
+        "weight": 3000,
+        "unit": "g",
+        "specie": "chihuahua"
+    }
+}

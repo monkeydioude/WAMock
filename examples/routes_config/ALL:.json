@@ -1,0 +1,3 @@
+{
+    "response": "Available routes: PUT/api/doggo/{id}, GET/api/doggo, POST /api/doggo"
+}

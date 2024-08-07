@@ -18,7 +18,11 @@ func (m Method) String() string {
 	return string(m)
 }
 
-func (m Method) Match(method string) bool {
+func (m Method) Match(method Method) bool {
+	return method.String() == m.String()
+}
+
+func (m Method) MatchString(method string) bool {
 	return method == m.String()
 }
 
@@ -33,4 +37,10 @@ func SeekMethod(method string) (Method, error) {
 		}
 	}
 	return NONE, errors.New("no method found")
+}
+
+func ForEachMethod(cb func(method Method)) {
+	for _, m := range []Method{PUT, POST, GET, DELETE, ALL, PATCH} {
+		cb(m)
+	}
 }

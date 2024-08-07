@@ -14,7 +14,7 @@ func TestICanFindMethodFromAString(t *testing.T) {
 	}
 	for str, goal := range tests {
 		trial, _ := SeekMethod(str)
-		if !goal.Match(trial.String()) {
+		if !goal.MatchString(trial.String()) {
 			t.Fatalf("%s != %s", trial, goal)
 		}
 	}

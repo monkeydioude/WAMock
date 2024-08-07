@@ -99,7 +99,7 @@ curl -H 'Content-Type: application/json' \
 
 ## TODO!
 
-- Match request defined in config with the request's payload
-- Handle config directory
+- ~~Handle config directory~~
 - Handle hot reload of the config through goroutines
+- Match request defined in config with the request's payload
 - (MAYBE NOT) Handle dynamic parameters in path that should be reflected in the response
