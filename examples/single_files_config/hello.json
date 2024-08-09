@@ -1,0 +1,7 @@
+{
+    "ALL/": {
+        "response": {
+            "message:": "Hello! This is the base minimal configuration. You can try changing the response to a JSON object, and add more routes."
+        }
+    }
+}

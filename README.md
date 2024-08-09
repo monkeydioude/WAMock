@@ -45,7 +45,7 @@ curl -H 'Content-Type: application/json' \
 ### Provided flags:
 
 - -x `{s}`: enable the config auto-reload coroutine and also set it to trigger every `s` seconds
-- -p `{port}`: choose the port you wish to run the server on. *Default is `8088`*
+- -p `{port}`: choose the port you wish to run the server on. _Default is `8088`_
 
 ## JSON!
 
@@ -85,6 +85,17 @@ curl -H 'Content-Type: application/json' \
 }
 ```
 
+## DOCKER!
+
+[Here is the image's repo](https://hub.docker.com/repository/docker/drannoc/wamock/general).
+
+To run this image, a **PATH to a valid config JSON file is required**. Such JSON file should be **[mounted as a volume (-v)](https://docs.docker.com/storage/volumes/#choose-the--v-or---mount-flag) and used as an ARG to the `docker run` command**
+As such:
+
+`docker run -p 8088:8088 -v $PWD/api_mock.json:/app/api_mock.json drannoc/wamock /app/api_mock.json`
+
+Note that the `/app/api_mock.json` PATH provided as an ARG matches the second part of the [mount volume (-v)](https://docs.docker.com/storage/volumes/#choose-the--v-or---mount-flag) parameter.
+
 ## EXAMPLES!
 
 ### Examples of command use:
@@ -100,6 +111,7 @@ curl -H 'Content-Type: application/json' \
 ## TODO!
 
 - ~~Handle config directory~~
+- ~~Docker image~~
 - Handle hot reload of the config through goroutines
 - Match request defined in config with the request's payload
 - (MAYBE NOT) Handle dynamic parameters in path that should be reflected in the response
