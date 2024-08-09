@@ -12,6 +12,8 @@ WAMock is:
 
 My personal use-case for starting this tool was to work from my commute train with bad internet connection, and also so I would not clutter my DB with trash data.
 
+![Go Unit Tests](https://github.com/monkeydioude/wamock/actions/workflows/go.yml/badge.svg)
+
 ## PARAMETERS!
 
 ### Using a single JSON as parameter:
