@@ -94,7 +94,7 @@ curl -H 'Content-Type: application/json' \
 To run this image, a **PATH to a valid config JSON file is required**. Such JSON file should be **[mounted as a volume (-v)](https://docs.docker.com/storage/volumes/#choose-the--v-or---mount-flag) and used as an ARG to the `docker run` command**
 As such:
 
-`docker run -p 8088:8088 -v $PWD/api_mock.json:/app/api_mock.json drannoc/wamock /app/api_mock.json`
+`docker run -p 8088:8088 -v $PWD/api_mock.json:/app/api_mock.json drannoc/wamock /app/api_mock.json -x 30`
 
 Note that the `/app/api_mock.json` PATH provided as an ARG matches the second part of the [mount volume (-v)](https://docs.docker.com/storage/volumes/#choose-the--v-or---mount-flag) parameter.
 
