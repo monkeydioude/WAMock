@@ -114,6 +114,6 @@ Note that the `/app/api_mock.json` PATH provided as an ARG matches the second pa
 
 - ~~Handle config directory~~
 - ~~Docker image~~
-- Handle hot reload of the config through goroutines
+- ~~Handle hot reload of the config through goroutines~~
 - Match request defined in config with the request's payload
 - (MAYBE NOT) Handle dynamic parameters in path that should be reflected in the response

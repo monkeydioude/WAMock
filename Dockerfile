@@ -10,4 +10,4 @@ EXPOSE 8088
 
 RUN go install -C /app/cmd/wamock
 ENTRYPOINT [ "wamock" ]
-CMD /app/examples/single_files_config/hello.json
+CMD ["/app/examples/single_files_config/hello.json", "-x", "0"]
