@@ -9,10 +9,10 @@ WAMock is:
 - _offline_, so you can work from a cave... and also so it can be used as part of testing, CI/CD... :)
 - _easy to use_, by using either **a single JSON describing the whole API, or a set of JSONs, each describing a route to mock**.
 - _lazy sometimes_, you can allow a coroutine to reload the json config every X seconds.
-
+- __dockerized__, see below.
 My personal use-case for starting this tool was to work from my commute train with bad internet connection, and also so I would not clutter my DB with trash data.
 
-![Go Unit Tests](https://github.com/monkeydioude/wamock/actions/workflows/go.yml/badge.svg)
+![Go](https://github.com/monkeydioude/wamock/actions/workflows/go.yml/badge.svg)
 
 ## PARAMETERS!
 
@@ -70,7 +70,7 @@ curl -H 'Content-Type: application/json' \
 
 ### Using a collection of JSON config files:
 
-`PUT:api/doggo/{id}.json`
+`PUT:api:doggo:{id}.json`
 
 ```json
 {
@@ -102,7 +102,7 @@ Note that the `/app/api_mock.json` PATH provided as an ARG matches the second pa
 
 ### Examples of command use:
 
-- `wamock path/to/config.json` (if we to use a single JSON for the whole configuration)
+- `wamock path/to/config.json -x 30` (if we to use a single JSON for the whole configuration and refresh the config every 30s)
 - `wamock path/to/routes_config_dir/` (if we want to use several JSONs)
 
 ### Examples of JSON file naming (in case of using a directory as argument):
