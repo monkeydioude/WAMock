@@ -9,7 +9,7 @@ WAMock is:
 - _offline_, so you can work from a cave... and also so it can be used as part of testing, CI/CD... :)
 - _easy to use_, by using either **a single JSON describing the whole API, or a set of JSONs, each describing a route to mock**.
 - _lazy sometimes_, you can allow a coroutine to reload the json config every X seconds.
-- __dockerized__, see below.
+- _dockerized_, see below.
 My personal use-case for starting this tool was to work from my commute train with bad internet connection, and also so I would not clutter my DB with trash data.
 
 ![Go](https://github.com/monkeydioude/wamock/actions/workflows/go.yml/badge.svg)
